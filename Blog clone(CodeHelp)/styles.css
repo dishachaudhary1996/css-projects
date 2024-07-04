@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.container{
+    max-width:50vw;
+    margin: 0 auto;
+    padding: 2rem 1 rem;
+    padding: 2%;
+}
+
+.header-container{
+    margin-bottom: 2.8rem;
+}
+
+.header-title{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.description{
+    max-width: 568px;
+    text-align: center;
+    color: rgb(110, 101, 101);
+    margin: 0 auto;
+}
+
+.card-container{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(1,1fr);
+
+}
+
+@media (min-width:650px) {
+
+    .card-container{
+        grid-template-columns: repeat(2,1fr);
+    }    
+}
+
+
+@media (min-width:1080px) {
+
+    .card-container{
+        grid-template-columns: repeat(2,1fr);
+    }    
+}
+
+
+@media (min-width:1340) {
+
+    .card-container{
+        grid-template-columns: repeat(2,1fr);
+    }    
+}
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(216, 211, 211);
+    border-radius: 9px;
+}
+
+.card-image-container{
+    position: relative;
+    overflow: hidden;
+    height: 14rem;
+}
+
+.card-image{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.card-title-container{
+    display: flex;
+    flex-direction: column;
+    padding:1rem;
+}
+
+.card-title{
+    font-size:1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-bottom: 0.1rem;
+    color: rgb(51, 49, 49);
+}
+
+.card-container:hover .card-image{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+
+.anchor-hover:hover .card-title{
+    color: blue;
+}
+
+
+.card-body{
+    color:rgb(121, 111, 111);
+    font-size: 1rem;
+}
+
+.card-footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.author-container{
+    display: flex;
+    align-items: center;
+    gap: 0.85rem;
+}
+
+.author-avatar-container{
+    height: 2.5rem;
+    width:2.5rem;
+    overflow: hidden;
+    border: 2px solid rgb(216, 211, 211);
+    border-radius: 50%;
+    background-color: rgb(216, 211, 211);
+    margin-left: 0.8rem;
+}
+
+.author-info-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.info-text{
+    color: rgb(71, 71, 228);
+}
+
+.info-date{
+    color: rgb(175, 162, 162);
+}
+
+.card-tag-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    border: 1px solid rgb(216, 211, 211) ;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 1rem;
+    color: rgb(158, 147, 147);
+}
